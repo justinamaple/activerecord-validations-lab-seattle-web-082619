@@ -1,5 +1,5 @@
 class Author < ActiveRecord::Base
   validates :name, presence: true
   validates :name, uniqueness
-  valides :phone_number, length: { minimum: }
+  valides :phone_number, length: { minimum: 10 }
 end
