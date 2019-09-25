@@ -1,6 +1,6 @@
 class ClickBaitValidator < ActiveModel::Validator
   def validate(record)
-    unless record.email.match?(/flatironschool.com/)
+    unless record.title.include?(/Won't Believe/)
       record.errors[:name] << "We're only allowed to have people who work for the company in the database!"
     end
   end
